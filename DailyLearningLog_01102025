@@ -1,0 +1,33 @@
+# January 10, 2025
+
+Explored the roadmap in preparation for building a lesson plan
+Used the following for references:
+https://www.geeksforgeeks.org/automation-testing-roadmap/
+https://aw.club/global/en/professions/software-testing-engineer-overview
+https://aw.club/global/en/professions/test-automation-engineer-overview
+
+Possible tools:
+Automation Tools
+- Selenium 
+- Appium
+- Cypress
+- TestRail (QA for enterprise test management)
+
+Frameworks
+- TestNG
+- JUnit
+- Lambda Test
+
+Version Control
+- Git
+- CI/CD
+- Jenkins
+
+Advanced Topics
+- BBD
+- Performance Testing (JMeter)
+- API Testing using Postman
+
+**Defect Tracking and Management
+- BugZilla, JIRA, Zephyr Scale
+
