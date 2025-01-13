@@ -1,0 +1,30 @@
+#January 13, 2025
+
+scanner.close(); -- need to close the scanner in java
+scanner.skip() -- new line or carriage return characters are skipped before continuing to read the next input
+stdin = standard input, stdout = standard output
+
+scanner.nextLine() -- When you call scan.nextInt() and scan.nextDouble(), they read the integer and double values from the input but do not consume the newline character (\n) at the end of the input line. As a result, when you call scan.next(), it only reads the leftover newline or part of the next input instead of the actual string input you intended.
+
+Solution
+You can fix this by consuming the leftover newline after reading the double value using scan.nextLine() before reading the string input.
+
+
+System.out.printf()--print formatted output
+%d	Integer	System.out.printf("%d", 42); // 42
+%f	Floating-point number	System.out.printf("%.2f", 3.1415); // 3.14
+%s	String	System.out.printf("%s", "Hello"); // Hello
+%c	Character	System.out.printf("%c", 'A'); // A
+%n	Newline (platform-independent)	System.out.printf("Line1%nLine2");
+%%	Prints a literal %	System.out.printf("100%% complete"); // 100% complete
+
+System.out.printf("%-15s%03d%n", s1,x);
+%-15s:
+- means left-justify.
+15 specifies a width of 15 characters.
+s specifies that the argument is a string.
+%03d:
+0 means pad with zeroes.
+3 specifies a width of 3 characters.
+d specifies that the argument is an integer.
+%n: Inserts a newline after each line of output.
