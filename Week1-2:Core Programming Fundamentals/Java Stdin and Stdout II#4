@@ -1,0 +1,32 @@
+In this challenge, you must read an integer, a double, and a String from stdin, then print the values according to the instructions in the Output Format section below. To make the problem a little easier, a portion of the code is provided for you in the editor.
+
+There are three lines of input:
+
+The first line contains an integer.
+The second line contains a double.
+The third line contains a String.
+
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int integerInput = scan.nextInt();
+        Double doubleInput = scan.nextDouble();
+        scan.nextLine(); //ensures that the int and double is cleared before the String input
+        String stringInput = scan.nextLine(); // will read the full string
+        scan.close();
+
+        System.out.println("String: " + stringInput);
+        System.out.println("Double: " + doubleInput);
+        System.out.println("Int: " + integerInput);
+    }
+}
+
+
+Inner notes:
+scanner.nextLine() -- When you call scan.nextInt() and scan.nextDouble(), they read the integer and double values from the input but do not consume the newline character (\n) at the end of the input line. As a result, when you call scan.next(), it only reads the leftover newline or part of the next input instead of the actual string input you intended.
+
+Solution
+You can fix this by consuming the leftover newline after reading the double value using scan.nextLine() before reading the string input.
