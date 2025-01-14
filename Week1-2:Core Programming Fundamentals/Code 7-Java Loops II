@@ -1,0 +1,45 @@
+The first line contains an integer, q , denoting the number of queries. 
+Each line i of the q subsequent lines contains three space-separated integers describing the respective ai, bi, ni and  values for that query.
+
+Output Format
+
+For each query, print the corresponding series on a new line. Each series must be printed in order as a single line of  space-separated integers.
+
+Problem Explanation:
+Input:
+The first line contains an integer 𝑞
+q — the number of queries.
+Each of the next 𝑞 lines contains three integers 
+𝑎, 𝑏, and 𝑛:
+a: The starting value.
+b: A value added at each step.
+n: The number of terms in the series.
+
+Approach:
+Use a loop to process each query.
+Generate the sequence for each query using a loop to compute powers of 2 and add the corresponding values.
+Print the series in the required format.
+
+
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();  // first line - number of queries    
+        for(int i=0;i<t;i++){
+            int a = in.nextInt();   //starting value
+            int b = in.nextInt();  // A value added at each step
+            int n = in.nextInt();  // Number of terms in the series
+            
+            int sum = a;
+            for(int j = 0; j<n; j++){
+                sum+= (int) Math.pow(2,j)*b;
+                System.out.print(sum + " ");
+            }
+            System.out.println();
+        }
+        in.close();
+    }
+}
