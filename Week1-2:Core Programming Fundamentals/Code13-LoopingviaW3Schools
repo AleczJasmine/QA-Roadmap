@@ -1,0 +1,66 @@
+NESTED Loops:
+The "inner loop" will be executed one time for each iteration of the "outer loop":
+// Outer loop
+for (int i = 1; i <= 2; i++) {
+  System.out.println("Outer: " + i); // Executes 2 times
+  
+  // Inner loop
+  for (int j = 1; j <= 3; j++) {
+    System.out.println(" Inner: " + j); // Executes 6 times (2 * 3)
+  }
+} 
+Outer: 1
+ Inner: 1
+ Inner: 2
+ Inner: 3
+Outer: 2
+ Inner: 1
+ Inner: 2
+ Inner: 3
+
+
+ for (int i = 1; i <= 2; i++) {
+  for (int j = 1; j <= 3; j++) {
+    System.out.println("outer loop: " + i + "," + " inner loop: "+j + " ");
+  }
+}
+outer loop: 1, inner loop: 1 
+outer loop: 1, inner loop: 2 
+outer loop: 1, inner loop: 3 
+outer loop: 2, inner loop: 1 
+outer loop: 2, inner loop: 2 
+outer loop: 2, inner loop: 3 
+
+For-Each Loop
+There is also a "for-each" loop, which is used exclusively to loop through elements in an array (or other data sets):
+for (type variableName : arrayName) {
+  // code block to be executed
+}
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (String i : cars) {
+  System.out.println(i);
+}
+Volvo
+BMW
+Ford
+Mazda
+
+
+
+Java Break and Continue
+The break statement can also be used to jump out of a loop.
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    break;
+  }
+  System.out.println(i);
+}
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+This example skips the value of 4:
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    continue;
+  }
+  System.out.println(i);
+}
