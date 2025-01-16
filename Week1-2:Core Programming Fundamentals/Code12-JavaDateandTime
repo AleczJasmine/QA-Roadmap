@@ -21,7 +21,7 @@ class Result {
     public static String findDay(int month, int day, int year) {
          //return findDay(month,day,year);
          Calendar newCalendar = Calendar.getInstance();
-         newCalendar.set(month,day,year);
+         newCalendar.set(year, month - 1, day);
          int dayOfWeek = newCalendar.get(Calendar.DAY_OF_WEEK);
          String[] days = { "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY" };
          return days[dayOfWeek - 1];
@@ -29,6 +29,8 @@ class Result {
          
     }
     
+    
+
 }
 
 public class Solution {
