@@ -1,0 +1,45 @@
+NumberFormat Class
+           - getCurrencyInstance
+	   - converting payment into different currency formats 
+	NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.US);
+        double amount = 12345.678;
+        System.out.println(currencyFormatter.format(amount)); // Example output: $12,345.68
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double payment = scanner.nextDouble();
+        scanner.close();
+        //US
+        NumberFormat currencyUS = NumberFormat.getCurrencyInstance(Locale.US);
+        String us = currencyUS.format(payment);
+        
+        // NO LOCALE FOR INDIA SO LETS CREATE NEW
+        Locale indiaLocale = new Locale("en", "IN");
+        NumberFormat currencyIndia = NumberFormat.getNumberInstance(indiaLocale);
+        String india = String.format("%,.2f",payment); // sorry hinardcode ko nalang HAHAHHAHA
+        
+        //China
+        NumberFormat currencyChina = NumberFormat.getCurrencyInstance(Locale.CHINA);
+        String china = currencyChina.format(payment);
+        
+        //France
+        NumberFormat currencyFrance = NumberFormat.getCurrencyInstance(Locale.FRANCE);
+        String france = currencyFrance.format(payment);
+        
+        
+        
+        System.out.println("US: " + us);
+        System.out.println("India: Rs." + india);
+        System.out.println("China: " + china);
+        System.out.println("France: " + france);
+    }
+}
