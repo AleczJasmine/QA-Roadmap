@@ -4,4 +4,8 @@ Complete Section 1: Introduction to Course - Java
 - Introduction to the course
 - Downloaded Needed Files
 
-Complete Section 2: Installing JAva
+Complete Section 2: Installing Java
+- Download Java SE in Oracle
+- Set path variable - search edit the system environment variables
+- System Variables - Path - edit - new - add path: "C:\PrograFiles\Java\jdk-23\bin" - move up until that is first
+- Command prompt - jshell -version/ java -version
