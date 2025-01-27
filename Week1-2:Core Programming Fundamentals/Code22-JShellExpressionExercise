@@ -1,0 +1,16 @@
+C:\Users\Upskill>jshell
+|  Welcome to JShell -- Version 23.0.1
+|  For an introduction type: /help intro
+
+jshell> 5*5
+$1 ==> 25
+
+jshell> System.out.println(5*5);
+25
+
+jshell> System.out.println("Minutes per day: " + 24*60);
+Minutes per day: 1440
+
+jshell> System.out.println("Seconds per day: " + (24*60)*60);
+Seconds per day: 86400
+
