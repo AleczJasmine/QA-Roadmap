@@ -9,3 +9,19 @@ Complete Section 2: Installing Java
 - Set path variable - search edit the system environment variables
 - System Variables - Path - edit - new - add path: "C:\PrograFiles\Java\jdk-23\bin" - move up until that is first
 - Command prompt - jshell -version/ java -version
+
+Complete Section 3: Introduction to Java Programming with JShell
+Steps in Problem Solving:
+1. Understand the problem
+2. Design the solution
+ - Break the problem down
+3. Write and Test your program
+
+jshell - gives immediate feedback which makes it easier to learn
+
+Multiplication Table - step by step breakdown
+1. calculate 5*5
+2. Print 5*5 = 25
+3. Do this 10 times
+
+Precedence : * / % > + - 
